@@ -10,16 +10,23 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
+<div class="center-block">
+  <div class="row">
+    <div class="form-group col-md-6">
+      <%= f.label :title %><br>
+      <%= f.text_field :title, class: "form-control" %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :url %><br>
-    <%= f.text_field :url %>
+  <div class="row">
+    <div class="form-group col-md-6">
+      <%= f.label :url %><br>
+      <%= f.text_field :url, class: "form-control" %>
+    </div>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="row">
+    <div class="form-group col-md-6">
+      <%= f.submit "Submit", class: "btn btn-lg btn-primary" %>
+    </div>
   </div>
+</div>
 <% end %>
